@@ -22,6 +22,29 @@ $db=dbconnection();
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
 
+    <style>
+        #table{
+            border-top: 2px solid #ccc;
+            border-bottom: 2px solid #ccc;
+            padding: 5px;
+        }
+        #table tr{
+            border-bottom: 2px solid #ccc;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        #table th {
+            padding: 0 20px;
+        }
+        #table td {
+            padding: 10px;
+         }
+         #blogul li {
+            width: 100%;
+         }
+
+    </style>
+
 </head>
 
 <body>
@@ -108,10 +131,12 @@ $db=dbconnection();
                             <div class="classynav">
                                 <ul>
                                     <li class="active"><a href="index.php">Home</a></li>
-                                    <li><a href="archive-list.php">Articles</a></li>
+                                    <li><a href="article.php">Articles</a></li>
                                     <li><a href="#">Abouts</a> </li>
                                     <li><a href="#">Contact</a></li>
                                     <li><a href="signup.php">Sign Up</a></li>
+                                 
+
                                 </ul>
                             </div>
                             <!-- Nav End -->

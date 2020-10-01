@@ -4,10 +4,9 @@ require_once('header.php');
 $errors = [];
 if (isset($_POST['submit'])) {
     if (signup($_POST)) {
-        header('Location: home.php');
+        header('Location: Login.php');
     }
 }
-
 
 ?>
 
@@ -70,6 +69,7 @@ if (isset($_POST['submit'])) {
                                 </div>
                             </div>
                             <button type="submit" name="submit" class="btn vizew-btn w-100 mt-30">Sign Up</button>
+                            <span style="float: right; color: white;">Already A Member? <a href="login.php" style="color: #0e0edf;">Login!</a></span>
                         </form>
                     </div>
                 </div>
